@@ -16,3 +16,9 @@ extern crate whoami;
 
 #[cfg(feature = "hp")]
 pub use whoami::HelloMacro;
+
+
+#[cfg(feature = "hp")]
+pub fn adx() {
+    println!("this is hello_macro adx..")
+}

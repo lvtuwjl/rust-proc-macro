@@ -3,6 +3,7 @@ use hello_macro::HelloMacro;
 use serde::ser::{SerializeStruct, Serializer};
 use serde::Serialize as yo;
 use whoami::WhoAmI;
+use hello_macro::adx;
 
 #[derive(WhoAmI)]
 struct Point {
@@ -29,6 +30,7 @@ fn main() {
     Pancakes::hello_macro();
 
     println!("end:{}", 345);
+    adx();
 }
 
 #[test]
